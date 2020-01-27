@@ -1,10 +1,10 @@
 
 Lab - Entering Commands
 ==========
-Follow the instructions line-by-line.  
+Follow the instructions line-by-line.
 
-* Type in the commands as is, but ignore the beginning prompt.  
-* Enter, tab, up and down are represented by <ENTER><TAB>,<UP> and <DOWN>.  
+* Type in the commands as is, but ignore the beginning prompt.
+* Enter, tab, up and down are represented by <ENTER><TAB>,<UP> and <DOWN>.
 * "No output" or "nothing happens" are valid answers to any of the questions.
 ==========
 
@@ -18,29 +18,41 @@ $ ls<ENTER>
 Copy and paste the output of ls below.
 ----------
 
+v314-ent-005:~ student$ ls
+Adlm				Movies				ipe.properties
+Applications			Music				isus
+Desktop				Pictures			lab_01_commandline_01
+Documents			Public				pslog_20200109_170408.log
+Downloads			QLData				pymel.log
+Library				Things				xgen
+
 
 
 ==========
-2a. Type: 
+2a. Type:
 
 $ ls D<TAB>
 
 What happens?  Describe it below.
 ----------
 
+Nothing happens after first <TAB> press
 
 
 ==========
 2b. Press <TAB> one more time.  Copy and paste the output below.
 ----------
 
+v314-ent-005:~ student$ ls D
+Desktop/   Documents/ Downloads/
 
 
 ==========
 2c. Now press <ENTER>. Copy and paste the output below.
 ----------
 
-
+v314-ent-005:~ student$ ls D
+ls: D: No such file or directory
 
 ==========
 3.  Type:
@@ -50,6 +62,23 @@ $ ls -l Documents<ENTER>
 Copy and paste the first *two lines* of output below.
 ----------
 
+v314-ent-005:~ student$ ls -l Documents
+total 8
+drwxrwxrwx  15 student  staff   510 Jan  9 17:04 Adobe
+drwxr-xr-x   3 student  staff   102 Aug 22  2016 Arduino
+drwxrwxrwx   3 student  staff   102 Jan  9 15:22 Avid Projects
+drwxr-xr-x   4 student  staff   136 Aug 22  2016 Fritzing
+drwxr-xr-x   3 student  staff   102 Aug  9  2017 MakeHuman
+drwxr-xr-x   9 student  staff   306 Aug 22  2016 Max 7
+-rw-r--r--   1 student  staff  2112 Aug  2  2018 MuseLog.txt
+drwxr-xr-x   3 student  staff   102 Jul 24  2019 Native Instruments
+drwxr-xr-x   3 student  staff   102 Jan 17  2018 Pd
+drwxr-xr-x  16 student  staff   544 Jan  9 15:22 Pro Tools
+drwxr-xr-x   7 student  staff   238 Jan 17  2017 Processing
+drwxr-xr-x   2 student  staff    68 Aug 31  2016 Temporary Work
+drwxr-xr-x   2 student  staff    68 Aug  2  2018 Unreal Projects
+-rw-r--r--   1 student  staff     0 Aug 22  2016 iChats
+drwxr-xr-x   3 student  staff   102 Aug 22  2016 maya
 
 
 ==========
@@ -60,6 +89,11 @@ $ ls -a Documents
 Copy and paste the first *two lines* of output below.
 ----------
 
+v314-ent-005:~ student$ ls -a Documents
+.			.localized		Fritzing		Native Instruments	Temporary Work
+..			Adobe			MakeHuman		Pd			Unreal Projects
+.DS_Store		Arduino			Max 7			Pro Tools		iChats
+.TmThBHyOVRrMJdi0	Avid Projects		MuseLog.txt		Processing		maya
 
 
 ==========
@@ -70,6 +104,7 @@ Copy and paste the first *two lines* of output below.
 What command was repeated?
 ----------
 
+ls -a Documents
 
 
 ==========
@@ -80,7 +115,7 @@ What command was repeated?
 What command was repeated?
 ----------
 
-
+ls -a Documents
 
 ==========
 7.  Type:
@@ -90,7 +125,7 @@ $ ls /Vol<TAB><ENTER>
 What is the result of pressing tab?
 ----------
 
-
+Vol is autocompleted to Volumes
 
 ==========
 8.  Type:
@@ -100,37 +135,41 @@ $ ls doesnotexist
 Copy and paste the output below.
 ----------
 
+v314-ent-005:~ student$ ls doesnotexist
+ls: doesnotexist: No such file or directory
 
 
 ==========
 9.  What key do I press to go to the previous command?
 ----------
 
-
+<UP>
 
 ==========
 10.  Name two flags that we used in this exercise.
 ----------
 
+-a -l
 
 
 ==========
 11.  What key do I use to attempt to autocomplete a command or a file name?
 ----------
 
-
+<TAB>
 
 ==========
 12.  What was the main command that we used throughout this exercise?
 ----------
 
+ ls
 
 
 ==========
 13.  Name one argument that we passed to the command.
 ----------
 
-
+Documents
 
 ==========
 14.  Type:
@@ -140,6 +179,9 @@ $ foo<ENTER>
 Copy and paste the output below.
 ----------
 
+ls: doesnotexist: No such file or directory
+v314-ent-005:~ student$ foo
+-bash: foo: command not found
 
 
 ==========
@@ -150,7 +192,8 @@ Copy and paste the output below.
 Copy and paste the output below.
 ----------
 
-
+v314-ent-005:~ student$ foo
+-bash: foo: command not found
 
 ==========
 16.  In the following line....
@@ -159,3 +202,9 @@ $ ls -a Desktop
 
 What is the command, flag, argument, and prompt?
 ----------
+
+
+command: ls
+flag: -a
+argument: Desktop
+prompt: $
