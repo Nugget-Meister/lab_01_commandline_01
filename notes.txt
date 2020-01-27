@@ -1,0 +1,290 @@
+v314-ent-005:lab_01_commandline_01 student$ git branch
+* master
+v314-ent-005:lab_01_commandline_01 student$ ls -a
+.				.git				lab-file-system.txt
+..				lab-entering-commands.txt
+v314-ent-005:lab_01_commandline_01 student$ open
+Usage: open [-e] [-t] [-f] [-W] [-R] [-n] [-g] [-h] [-s <partial SDK name>][-b <bundle identifier>] [-a <application>] [filenames] [--args arguments]
+Help: Open opens files from a shell.
+      By default, opens each file using the default application for that file.  
+      If the file is in the form of a URL, the file will be opened as a URL.
+Options: 
+      -a                Opens with the specified application.
+      -b                Opens with the specified application bundle identifier.
+      -e                Opens with TextEdit.
+      -t                Opens with default text editor.
+      -f                Reads input from standard input and opens with TextEdit.
+      -F  --fresh       Launches the app fresh, that is, without restoring windows. Saved persistent state is lost, excluding Untitled documents.
+      -R, --reveal      Selects in the Finder instead of opening.
+      -W, --wait-apps   Blocks until the used applications are closed (even if they were already running).
+          --args        All remaining arguments are passed in argv to the application's main() function instead of opened.
+      -n, --new         Open a new instance of the application even if one is already running.
+      -j, --hide        Launches the app hidden.
+      -g, --background  Does not bring the application to the foreground.
+      -h, --header      Searches header file locations for headers matching the given filenames, and opens them.
+      -s                For -h, the SDK to use; if supplied, only SDKs whose names contain the argument value are searched.
+                        Otherwise the highest versioned SDK in each platform is used.
+v314-ent-005:lab_01_commandline_01 student$ open lab-enteringcommands.txt
+The file /Users/student/lab_01_commandline_01/lab-enteringcommands.txt does not exist.
+v314-ent-005:lab_01_commandline_01 student$ op
+-bash: op: command not found
+v314-ent-005:lab_01_commandline_01 student$ atom lab-
+lab-entering-commands.txt  lab-file-system.txt        
+v314-ent-005:lab_01_commandline_01 student$ atom lab-
+lab-entering-commands.txt  lab-file-system.txt        
+v314-ent-005:lab_01_commandline_01 student$ atom lab-
+lab-entering-commands.txt  lab-file-system.txt        
+v314-ent-005:lab_01_commandline_01 student$ atom lab-entering-commands.txt 
+v314-ent-005:lab_01_commandline_01 student$ clear
+
+
+
+v314-ent-005:lab_01_commandline_01 student$ git branch
+* master
+v314-ent-005:lab_01_commandline_01 student$ ls -a
+.				.git				lab-file-system.txt
+..				lab-entering-commands.txt
+v314-ent-005:lab_01_commandline_01 student$ ls
+lab-entering-commands.txt	lab-file-system.txt
+v314-ent-005:lab_01_commandline_01 student$ op
+
+
+-=-=-=-=-==-=-=-=-=-=-=-=-=-=-
+
+Last login: Mon Jan 27 15:26:59 on ttys000
+v314-ent-005:lab_01_commandline_01 student$ cd ~
+v314-ent-005:~ student$ ls 
+Adlm				Movies				ipe.properties
+Applications			Music				isus
+Desktop				Pictures			lab_01_commandline_01
+Documents			Public				pslog_20200109_170408.log
+Downloads			QLData				pymel.log
+Library				Things				xgen
+v314-ent-005:~ student$ ls D
+Desktop/   Documents/ Downloads/ 
+v314-ent-005:~ student$ ls D
+Desktop/   Documents/ Downloads/ 
+v314-ent-005:~ student$ ls D
+Desktop/   Documents/ Downloads/ 
+v314-ent-005:~ student$ ls D
+ls: D: No such file or directory
+v314-ent-005:~ student$ ls D
+Desktop/   Documents/ Downloads/ 
+v314-ent-005:~ student$ ls D
+Desktop/   Documents/ Downloads/ 
+v314-ent-005:~ student$ ls D
+ls: D: No such file or directory
+v314-ent-005:~ student$ ls D
+Desktop/   Documents/ Downloads/ 
+v314-ent-005:~ student$ ls -l Documents
+total 8
+drwxrwxrwx  15 student  staff   510 Jan  9 17:04 Adobe
+drwxr-xr-x   3 student  staff   102 Aug 22  2016 Arduino
+drwxrwxrwx   3 student  staff   102 Jan  9 15:22 Avid Projects
+drwxr-xr-x   4 student  staff   136 Aug 22  2016 Fritzing
+drwxr-xr-x   3 student  staff   102 Aug  9  2017 MakeHuman
+drwxr-xr-x   9 student  staff   306 Aug 22  2016 Max 7
+-rw-r--r--   1 student  staff  2112 Aug  2  2018 MuseLog.txt
+drwxr-xr-x   3 student  staff   102 Jul 24  2019 Native Instruments
+drwxr-xr-x   3 student  staff   102 Jan 17  2018 Pd
+drwxr-xr-x  16 student  staff   544 Jan  9 15:22 Pro Tools
+drwxr-xr-x   7 student  staff   238 Jan 17  2017 Processing
+drwxr-xr-x   2 student  staff    68 Aug 31  2016 Temporary Work
+drwxr-xr-x   2 student  staff    68 Aug  2  2018 Unreal Projects
+-rw-r--r--   1 student  staff     0 Aug 22  2016 iChats
+drwxr-xr-x   3 student  staff   102 Aug 22  2016 maya
+v314-ent-005:~ student$ ls -a Documents
+.			.localized		Fritzing		Native Instruments	Temporary Work
+..			Adobe			MakeHuman		Pd			Unreal Projects
+.DS_Store		Arduino			Max 7			Pro Tools		iChats
+.TmThBHyOVRrMJdi0	Avid Projects		MuseLog.txt		Processing		maya
+v314-ent-005:~ student$ ls -a Documents
+.			.localized		Fritzing		Native Instruments	Temporary Work
+..			Adobe			MakeHuman		Pd			Unreal Projects
+.DS_Store		Arduino			Max 7			Pro Tools		iChats
+.TmThBHyOVRrMJdi0	Avid Projects		MuseLog.txt		Processing		maya
+v314-ent-005:~ student$ ls -a Documents
+.			.localized		Fritzing		Native Instruments	Temporary Work
+..			Adobe			MakeHuman		Pd			Unreal Projects
+.DS_Store		Arduino			Max 7			Pro Tools		iChats
+.TmThBHyOVRrMJdi0	Avid Projects		MuseLog.txt		Processing		maya
+v314-ent-005:~ student$ ls /VOL
+ls: /VOL: No such file or directory
+v314-ent-005:~ student$ ls /Volum
+ls: /Volum: No such file or directory
+v314-ent-005:~ student$ ls doesnotexist
+ls: doesnotexist: No such file or directory
+v314-ent-005:~ student$ foo
+-bash: foo: command not found
+v314-ent-005:~ student$ foo
+-bash: foo: command not found
+v314-ent-005:~ student$ git push
+fatal: not a git repository (or any of the parent directories): .git
+v314-ent-005:~ student$ cd lab_01_commandline_01/
+v314-ent-005:lab_01_commandline_01 student$ git brnach
+git: 'brnach' is not a git command. See 'git --help'.
+
+The most similar command is
+	branch
+v314-ent-005:lab_01_commandline_01 student$ git branch
+* master
+v314-ent-005:lab_01_commandline_01 student$ git push
+Username for 'https://github.com': Nugget-Meister
+Password for 'https://Nugget-Meister@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/Nugget-Meister/lab_01_commandline_01.git/'
+v314-ent-005:lab_01_commandline_01 student$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   lab-entering-commands.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+v314-ent-005:lab_01_commandline_01 student$ git push
+Username for 'https://github.com': Nugget-Meister
+Password for 'https://Nugget-Meister@github.com': 
+Everything up-to-date
+v314-ent-005:lab_01_commandline_01 student$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   lab-entering-commands.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+v314-ent-005:lab_01_commandline_01 student$ git add -A
+v314-ent-005:lab_01_commandline_01 student$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   lab-entering-commands.txt
+
+v314-ent-005:lab_01_commandline_01 student$ git commit -, "my first lab"
+error: unknown switch `,'
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+v314-ent-005:lab_01_commandline_01 student$ git commit - "my first lab"
+error: pathspec '-' did not match any file(s) known to git
+error: pathspec 'my first lab' did not match any file(s) known to git
+v314-ent-005:lab_01_commandline_01 student$ git commit -m "my first lab"
+[master 9788da5] my first lab
+ Committer: Student <student@v314-ent-005.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 60 insertions(+), 11 deletions(-)
+v314-ent-005:lab_01_commandline_01 student$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+v314-ent-005:lab_01_commandline_01 student$ git push
+Username for 'https://github.com': Nugget-Meister
+Password for 'https://Nugget-Meister@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.60 KiB | 1.60 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/Nugget-Meister/lab_01_commandline_01.git
+   3583a8e..9788da5  master -> master
+v314-ent-005:lab_01_commandline_01 student$ git push origin master
+Username for 'https://github.com': Nugget-Meister
+Password for 'https://Nugget-Meister@github.com': 
+Everything up-to-date
+v314-ent-005:lab_01_commandline_01 student$ git 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
