@@ -331,13 +331,13 @@ ls -l
 28. What's a pathname?
 ----------
 
-A route to a directory
+A general form/pathway to a file or directory.
 
 ==========
 29. What's a directory?
----------- 
+----------
 
-A location where files are stored
+A cataloging location where files are stored.
 
 ==========
 30. What's the *absolute* path (full path, starting at root) to your user's Downloads directory?

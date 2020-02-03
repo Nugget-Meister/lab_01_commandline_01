@@ -268,8 +268,10 @@ Opening files from repository.
 
         cd [dir]
 
-3.
+3. Open file in text editor of choice (example: Atom)
 
+        [program] [filename.extension]
+          atom         notes.txt
 ================
 
 Saving repository edits to cloud process
@@ -278,3 +280,22 @@ git status                       (check if files modified)
 git add -A                       (stage all files for commit)
 git commit -m "[commit message]" (commit edits to repository [commit message])
 git push                         (push files forward)
+
+
+===============
+Creating a file
+
+Method A - Using Touch
+
+1. Create file with filename
+
+    touch [filename.extension]
+
+    touch word.txt
+
+
+2. Open file with text editor of choice
+
+    [program] [filename.extension]
+
+    atom word.txt
