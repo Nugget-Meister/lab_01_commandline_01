@@ -170,7 +170,7 @@ ls: doesnotexist: No such file or directory
 ----------
 
 Documents
- 
+
 ==========
 14.  Type:
 
@@ -202,7 +202,7 @@ $ ls -a Desktop
 
 What is the command, flag, argument, and prompt?
 ----------
-
+ 
 
 command: ls
 flag: -a

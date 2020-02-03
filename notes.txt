@@ -259,9 +259,22 @@ v314-ent-005:lab_01_commandline_01 student$ git
 
 
 ================
+Opening files from repository.
 
+1. Clone repository
+        git clone [url]
 
-git status    (check if files modified)
-git add -A    (stage all files for commit)
-git push
-git commit -m 
+2. Choose working directory for repository
+
+        cd [dir]
+
+2.
+
+================
+
+Saving repository edits to cloud process
+
+git status                       (check if files modified)
+git add -A                       (stage all files for commit)
+git commit -m "[commit message]" (commit edits to repository [commit message])
+git push                         (push files forward)

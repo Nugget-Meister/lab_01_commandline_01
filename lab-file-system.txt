@@ -335,7 +335,7 @@ A route to a directory
 
 ==========
 29. What's a directory?
-----------
+---------- 
 
 A location where files are stored
 
