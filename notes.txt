@@ -259,3 +259,9 @@ v314-ent-005:lab_01_commandline_01 student$ git
 
 
 ================
+
+
+git status    (check if files modified)
+git add -A    (stage all files for commit)
+git push
+git commit -m 

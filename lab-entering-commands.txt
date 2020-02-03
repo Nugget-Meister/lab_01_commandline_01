@@ -170,7 +170,7 @@ ls: doesnotexist: No such file or directory
 ----------
 
 Documents
-
+ 
 ==========
 14.  Type:
 
