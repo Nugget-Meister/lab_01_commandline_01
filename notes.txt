@@ -268,7 +268,11 @@ Opening files from repository.
 
         cd [dir]
 
+<<<<<<< HEAD
 3. Open file in text editor of choice (example: Atom)
+=======
+3.
+>>>>>>> 4af1a9002f0172fb6cdd42b56c59964264480085
 
         [program] [filename.extension]
           atom         notes.txt
