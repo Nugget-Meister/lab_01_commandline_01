@@ -268,7 +268,7 @@ Opening files from repository.
 
         cd [dir]
 
-2.
+3.
 
 ================
 
