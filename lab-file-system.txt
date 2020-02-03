@@ -1,10 +1,10 @@
 
 Lab - Navigating the File System
 ==========
-Follow the instructions line-by-line.  
+Follow the instructions line-by-line.
 
-* Type in the commands as is, but ignore the beginning prompt.  
-* Enter, tab, up and down are represented by <ENTER><TAB>,<UP> and <DOWN>.  
+* Type in the commands as is, but ignore the beginning prompt.
+* Enter, tab, up and down are represented by <ENTER><TAB>,<UP> and <DOWN>.
 * "No output" or "nothing happens" are valid answers to any of the questions.
 ==========
 
@@ -32,7 +32,8 @@ If it doesn't start at #1 again, or ask for help before moving on!
 Copy and paste the output of pwd below.
 ----------
 
-
+v314-ent-005:mtec1002 student$ pwd
+/Users/student/mtec1002
 
 ==========
 5. Type:
@@ -42,6 +43,10 @@ $ ls
 
 Copy and paste the output below.
 ----------
+
+v314-ent-005:mtec1002 student$ mkdir animals
+v314-ent-005:mtec1002 student$ ls
+animals
 
 
 
@@ -54,6 +59,9 @@ $ ls
 Copy and paste the output below.
 ----------
 
+v314-ent-005:mtec1002 student$ mkdir food
+v314-ent-005:mtec1002 student$ ls
+animals	food
 
 
 ==========
@@ -65,6 +73,9 @@ $ ls
 Copy and paste the output below.
 ----------
 
+v314-ent-005:mtec1002 student$ mkdir -p foo/bar/baz/qux
+v314-ent-005:mtec1002 student$ ls
+animals	foo	food
 
 
 ==========
@@ -76,7 +87,9 @@ $ pwd
 Copy and paste the output below.
 ----------
 
-
+v314-ent-005:mtec1002 student$ cd foo/bar/baz/qux
+v314-ent-005:qux student$ pwd
+/Users/student/mtec1002/foo/bar/baz/qux
 
 ==========
 9. Type:
@@ -87,6 +100,9 @@ $ pwd
 Copy and paste the output below.
 ----------
 
+v314-ent-005:qux student$ cd ../..
+v314-ent-005:bar student$ pwd
+/Users/student/lab_01_commandline_01/mtec1002/foo/bar
 
 
 ==========
@@ -98,8 +114,11 @@ $ pwd
 Copy and paste the output below.
 ----------
 
+v314-ent-005:bar student$ cd -
+/Users/student/mtec1002/foo/bar/baz/qux
+v314-ent-005:qux student$ pwd
+/Users/student/mtec1002/foo/bar/baz/qux
 
- 
 ==========
 11. Type:
 
@@ -109,6 +128,9 @@ $ pwd
 Copy and paste the output below.
 ----------
 
+v314-ent-005:qux student$ cd ../../../..
+v314-ent-005:mtec1002 student$ pwd
+/Users/student/mtec1002
 
 
 ==========
@@ -121,7 +143,16 @@ $ ls -l
 Copy and paste the first two lines from the output into the space below.
 ----------
 
-
+314-ent-005:mtec1002 student$ ls -l
+total 0
+drwxr-xr-x  2 student  staff   68 Feb  3 14:34 animals
+drwxr-xr-x  3 student  staff  102 Feb  3 14:35 foo
+drwxr-xr-x  2 student  staff   68 Feb  3 14:34 food
+v314-ent-005:mtec1002 student$ rmdir animals
+v314-ent-005:mtec1002 student$ ls -l
+total 0
+drwxr-xr-x  3 student  staff  102 Feb  3 14:35 foo
+drwxr-xr-x  2 student  staff   68 Feb  3 14:34 food
 
 ==========
 13. Type:
@@ -132,6 +163,9 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
+v314-ent-005:mtec1002 student$ cd ~
+v314-ent-005:~ student$ pwd
+/Users/student
 
 
 ==========
@@ -143,6 +177,10 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
+v314-ent-005:~ student$ cd/Volumes
+-bash: cd/Volumes: No such file or directory
+v314-ent-005:~ student$ pwd
+/Users/student
 
 
 ==========
@@ -154,7 +192,10 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
-
+v314-ent-005:~ student$ cd /unknown_folder
+-bash: cd: /unknown_folder: No such file or directory
+v314-ent-005:~ student$ pwd
+/Users/student
 
 ==========
 15. Type:
@@ -165,6 +206,10 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
+v314-ent-005:~ student$ cd ~/mtec1002
+-bash: cd: /Users/student/mtec1002: No such file or directory
+v314-ent-005:~ student$ pwd
+/Users/student
 
 
 ==========
@@ -175,13 +220,14 @@ $ hostname
 Copy and paste the output into the space below.
 ----------
 
-
+v314-ent-005:~ student$ hostname
+v314-ent-005.local
 
 ==========
 17a. Make sure you're back in your mtec1002, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
 ----------
 
-
+pwd
 
 ==========
 17b. If you're not in the right directory, type the following command:
@@ -204,23 +250,28 @@ lemon
 Use only one command to make all of these new directories.  Write what command you used below:
 ----------
 
-
+v314-ent-005:mtec1002 student$ mkdir -p lemon/strawberry/orange/pineapple
 
 ==========
-19. Make another directory called aardvark.  
+19. Make another directory called aardvark.
 
 Write the command you used to create the directory below:
 ----------
 
-
+mkdir aardvark
 
 ==========
-20. List the files and directories in the current directory using the long format.  
+20. List the files and directories in the current directory using the long format.
 
 What is the modified date of the aardvark directory?
 ----------
 
+v314-ent-005:mtec1002 student$ ls -l
+total 0
+drwxr-xr-x  2 student  staff   68 Feb  3 14:47 aardvark
+drwxr-xr-x  3 student  staff  102 Feb  3 14:46 lemon
 
+14:47
 
 ==========
 21. Make 3 directories nested within each other:
@@ -232,6 +283,7 @@ What is the modified date of the aardvark directory?
 What command did you use?
 ----------
 
+v314-ent-005:mtec1002 student$ mkdir -p foo/bar/baz
 
 
 ==========
@@ -240,7 +292,7 @@ What command did you use?
 What command did you use?
 ----------
 
-
+v314-ent-005:mtec1002 student$ cd foo/bar/baz/
 
 ==========
 23. Change your directory so that you're two directories up (foo)
@@ -248,43 +300,48 @@ What command did you use?
 What command did you use?
 ----------
 
+cd ../..
+
 
 ==========
 24. What command is used to delete empty directories?
 ----------
 
-
+rmdir
 
 ==========
 25. What command is used to print out your current working directory?
 ----------
 
-
+pwd
 
 ==========
 26. What flag do I pass to ls to print out all files?
 ----------
 
-
+ls -l
 
 ==========
 27. What's the shortcut for home directory?
 ----------
 
-
+~
 
 ==========
 28. What's a pathname?
 ----------
 
-
+A route to a directory
 
 ==========
 29. What's a directory?
 ----------
 
-
+A location where files are stored
 
 ==========
 30. What's the *absolute* path (full path, starting at root) to your user's Downloads directory?
 ----------
+
+
+/Users/student/Downloads

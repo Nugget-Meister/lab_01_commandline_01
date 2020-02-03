@@ -6,9 +6,9 @@ v314-ent-005:lab_01_commandline_01 student$ ls -a
 v314-ent-005:lab_01_commandline_01 student$ open
 Usage: open [-e] [-t] [-f] [-W] [-R] [-n] [-g] [-h] [-s <partial SDK name>][-b <bundle identifier>] [-a <application>] [filenames] [--args arguments]
 Help: Open opens files from a shell.
-      By default, opens each file using the default application for that file.  
+      By default, opens each file using the default application for that file.
       If the file is in the form of a URL, the file will be opened as a URL.
-Options: 
+Options:
       -a                Opens with the specified application.
       -b                Opens with the specified application bundle identifier.
       -e                Opens with TextEdit.
@@ -29,12 +29,12 @@ The file /Users/student/lab_01_commandline_01/lab-enteringcommands.txt does not 
 v314-ent-005:lab_01_commandline_01 student$ op
 -bash: op: command not found
 v314-ent-005:lab_01_commandline_01 student$ atom lab-
-lab-entering-commands.txt  lab-file-system.txt        
+lab-entering-commands.txt  lab-file-system.txt
 v314-ent-005:lab_01_commandline_01 student$ atom lab-
-lab-entering-commands.txt  lab-file-system.txt        
+lab-entering-commands.txt  lab-file-system.txt
 v314-ent-005:lab_01_commandline_01 student$ atom lab-
-lab-entering-commands.txt  lab-file-system.txt        
-v314-ent-005:lab_01_commandline_01 student$ atom lab-entering-commands.txt 
+lab-entering-commands.txt  lab-file-system.txt
+v314-ent-005:lab_01_commandline_01 student$ atom lab-entering-commands.txt
 v314-ent-005:lab_01_commandline_01 student$ clear
 
 
@@ -53,7 +53,7 @@ v314-ent-005:lab_01_commandline_01 student$ op
 
 Last login: Mon Jan 27 15:26:59 on ttys000
 v314-ent-005:lab_01_commandline_01 student$ cd ~
-v314-ent-005:~ student$ ls 
+v314-ent-005:~ student$ ls
 Adlm				Movies				ipe.properties
 Applications			Music				isus
 Desktop				Pictures			lab_01_commandline_01
@@ -61,21 +61,21 @@ Documents			Public				pslog_20200109_170408.log
 Downloads			QLData				pymel.log
 Library				Things				xgen
 v314-ent-005:~ student$ ls D
-Desktop/   Documents/ Downloads/ 
+Desktop/   Documents/ Downloads/
 v314-ent-005:~ student$ ls D
-Desktop/   Documents/ Downloads/ 
+Desktop/   Documents/ Downloads/
 v314-ent-005:~ student$ ls D
-Desktop/   Documents/ Downloads/ 
-v314-ent-005:~ student$ ls D
-ls: D: No such file or directory
-v314-ent-005:~ student$ ls D
-Desktop/   Documents/ Downloads/ 
-v314-ent-005:~ student$ ls D
-Desktop/   Documents/ Downloads/ 
+Desktop/   Documents/ Downloads/
 v314-ent-005:~ student$ ls D
 ls: D: No such file or directory
 v314-ent-005:~ student$ ls D
-Desktop/   Documents/ Downloads/ 
+Desktop/   Documents/ Downloads/
+v314-ent-005:~ student$ ls D
+Desktop/   Documents/ Downloads/
+v314-ent-005:~ student$ ls D
+ls: D: No such file or directory
+v314-ent-005:~ student$ ls D
+Desktop/   Documents/ Downloads/
 v314-ent-005:~ student$ ls -l Documents
 total 8
 drwxrwxrwx  15 student  staff   510 Jan  9 17:04 Adobe
@@ -130,7 +130,7 @@ v314-ent-005:lab_01_commandline_01 student$ git branch
 * master
 v314-ent-005:lab_01_commandline_01 student$ git push
 Username for 'https://github.com': Nugget-Meister
-Password for 'https://Nugget-Meister@github.com': 
+Password for 'https://Nugget-Meister@github.com':
 remote: Invalid username or password.
 fatal: Authentication failed for 'https://github.com/Nugget-Meister/lab_01_commandline_01.git/'
 v314-ent-005:lab_01_commandline_01 student$ git status
@@ -145,7 +145,7 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 v314-ent-005:lab_01_commandline_01 student$ git push
 Username for 'https://github.com': Nugget-Meister
-Password for 'https://Nugget-Meister@github.com': 
+Password for 'https://Nugget-Meister@github.com':
 Everything up-to-date
 v314-ent-005:lab_01_commandline_01 student$ git status
 On branch master
@@ -240,7 +240,7 @@ Your branch is ahead of 'origin/master' by 1 commit.
 nothing to commit, working tree clean
 v314-ent-005:lab_01_commandline_01 student$ git push
 Username for 'https://github.com': Nugget-Meister
-Password for 'https://Nugget-Meister@github.com': 
+Password for 'https://Nugget-Meister@github.com':
 Enumerating objects: 5, done.
 Counting objects: 100% (5/5), done.
 Delta compression using up to 12 threads
@@ -251,40 +251,11 @@ To https://github.com/Nugget-Meister/lab_01_commandline_01.git
    3583a8e..9788da5  master -> master
 v314-ent-005:lab_01_commandline_01 student$ git push origin master
 Username for 'https://github.com': Nugget-Meister
-Password for 'https://Nugget-Meister@github.com': 
+Password for 'https://Nugget-Meister@github.com':
 Everything up-to-date
-v314-ent-005:lab_01_commandline_01 student$ git 
+v314-ent-005:lab_01_commandline_01 student$ git
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+================
