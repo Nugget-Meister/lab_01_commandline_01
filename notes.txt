@@ -1,3 +1,10 @@
+Lab 01
+
+http://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/01/file-system.html#8.0
+
+
+
+
 
 ================
 Opening files from repository.
