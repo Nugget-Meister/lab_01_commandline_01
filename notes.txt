@@ -16,6 +16,7 @@ man [command]
 
 Directory tips
 
+
 . (dot) is current directory
 .. (dot dot) is parent directory
 ../.. (dot dot slash dot dot) is parent of parent directory
@@ -38,7 +39,17 @@ Return to previous saved directory. Returns to previous saved directory using pu
 
 popd
 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+List files in directory, pathname defaults to working directory.
 
+ls [optional pathname]
+
+
+flags
+
+-a (hidden files)
+-l (list details, long format)
+-t (sort by time modified
 
 
 
