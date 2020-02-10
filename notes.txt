@@ -135,5 +135,22 @@ mv test.txt cat/test.txt
 
 
 ===============
+Finding things.
 
 
+1. String in file
+
+grep [filename]
+
+flags
+	-n (search for line`)
+	-r (recursive, search further directories)
+
+2. File in directory
+
+find [filename] 
+
+flags
+
+	-name (name of file)
+	* (wildcard for extensions/filenames etc.)
