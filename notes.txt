@@ -6,6 +6,42 @@ http://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/01/file-system.htm
 
 
 
+-=-=-=-=-=-==-=-=-=-=-=-=-=-
+Help with commands
+
+man [command]
+
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+Directory tips
+
+. (dot) is current directory
+.. (dot dot) is parent directory
+../.. (dot dot slash dot dot) is parent of parent directory
+/ (slash) is root directory
+~ (tilde) is home directory
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Change Directory
+
+cd [directory]
+
+
+Change directory, save previous
+
+ pushd [directory]
+
+
+Return to previous saved directory. Returns to previous saved directory using pushd]
+
+popd
+
+
+
+
+
 ================
 Opening files from repository.
 
@@ -48,6 +84,23 @@ Method A - Using Touch
     [program] [filename.extension]
 
     atom word.txt
+================
+Create directory
+
+1. Use mkdir. (defaults to current directory, path can be changed for different directories)
+
+mkdir [pathname]
+
+mkdir test
+
+
+1b. Recursive create (making folders inside of folders at once)
+
+mkdir [pathname] -p
+
+mkdir Documents/hope/ajw -p
+
+
 
 ================
 Copy a file
@@ -70,4 +123,6 @@ mv [filename] [file directory]
 mv test.txt cat/test.txt
 
 
-=====
+===============
+
+
